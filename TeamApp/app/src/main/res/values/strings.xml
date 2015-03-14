@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">Check Location</string>
+
+    <!-- WELCOME SCREEN -->
+
+    <string name="welcome">Welcome to the game!</string>
+    <string name="app_name">Hide and Find</string>
+    <string name="latitude_label">Latitude: </string>
+    <string name="longitude_label">Longitude: </string>
+    <string name="no_location_detected">Coordinates undetected - turn on device location</string>
+    <string name="onQuery">Game Status</string>
+    <string name="location_submission">Enter Game</string>
+    <string name="title_activity_query_activity_1">Game Status</string>
+    <string name="status_label">Game: </string>
+    <string name="time_label">Started On: </string>
+    <string name="result_label">Results: </string>
+    <string name="Status">Compare Your Location to the Hider</string>
+    <string name="Challenge">Compare Locations</string>
+    <string name="title_activity_find">Find</string>
+    <string name="title_activity_game_status">GameStatus</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_results">Results</string>
+    <string name="title_activity_results_status">ResultsStatus</string>
+    <string name="title_activity_distance_query">DistanceQuery</string>
+    <string name="title_activity_user_query">UserQuery</string>
+    <string name="Prompt">↓ Enter or Start Game Here ↓</string>
+
+</resources>
