@@ -1,3 +1,4 @@
+/*
 package edubhuebner.washington.httpstudents.teamapp;
 
 import android.app.Activity;
@@ -102,7 +103,6 @@ public class QueryActivity_1 extends Activity {
 }
 
 
-/*
 Pull last entry (most current) from database
 
 <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -115,4 +115,7 @@ public String getMacAddress(Context context) {
         }
         return macAddress;
         }
+
+
+
 */

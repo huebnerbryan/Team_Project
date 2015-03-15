@@ -42,7 +42,7 @@ public class ResultsStatus extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private class GameResults extends AsyncTask<Void, Void, String> {
+    private class Results extends AsyncTask<Void, Void, String> {
         protected String doInBackground(Void... voids) {
             try {
                 MongoClientURI uri = new MongoClientURI("mongodb://Team_2:Team_2@ds031701.mongolab.com:31701/gameapp");
@@ -51,10 +51,10 @@ public class ResultsStatus extends ActionBarActivity {
 
                 DBCollection game = db.getCollection("game");
 
-                DBCursor Results = game.find().sort(new BasicDBObject("Results", "Winner! Winner!"));
+                DBCursor Results = game.find().sort(new BasicDBObject("Results", "Cold - Guess Again!"));
 
                 if (Results.count() < 0) {
-                    return "Getting Warmer";
+                    return "Warm - Guess Again!";
                 } else {
                     return "Winner! Winner!";
                 }

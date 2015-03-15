@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.common.api.Status;
 import com.google.android.gms.location.LocationServices;
 import com.mongodb.BasicDBObject;
 import com.mongodb.DB;
@@ -34,6 +35,7 @@ public class MainActivity extends Activity implements
     protected final static String LAST_UPDATED_TIME_STRING_KEY = "last-updated-time-string-key";
     protected Location mCurrentLocation;
     protected Location mLastLocation;
+    protected Status mLaststatus;
     /*protected TextView mLatitudeText;
     protected TextView mLongitudeText;*/
     protected Boolean mRequestingLocationUpdates;
@@ -127,8 +129,8 @@ public class MainActivity extends Activity implements
                     LastLocation.put("Latitude", String.valueOf(mLastLocation.getLatitude()));
                     LastLocation.put("Longitude", String.valueOf(mLastLocation.getLongitude()));
                     LastLocation.put("Time", String.valueOf( now));
-                    LastLocation.put("Status", String.valueOf("In Progress"));
-                    LastLocation.put("Results", String.valueOf(" Cold - Guess Again!"));
+                    LastLocation.put("Status", String.valueOf(" In Progress"));
+                    LastLocation.put("Results", String.valueOf(" Winner! Winner!"));
 
                     game.insert(LastLocation);
                     client.close();
@@ -145,8 +147,8 @@ public class MainActivity extends Activity implements
         }
     }
 
-    public void onQueryClick(View view) {
-        Intent intent = new Intent(this, QueryActivity_1.class);
+    public void onStatusClick(View view) {
+        Intent intent = new Intent(this, GameStatus.class);
         startActivity(intent);
     }
 }

@@ -10,13 +10,13 @@
     <string name="latitude_label">Latitude: </string>
     <string name="longitude_label">Longitude: </string>
     <string name="no_location_detected">Coordinates undetected - turn on device location</string>
-    <string name="onQuery">Game Status</string>
+    <string name="onStatusClick">Game Status</string>
     <string name="location_submission">Enter Game</string>
     <string name="title_activity_query_activity_1">Game Status</string>
     <string name="status_label">Game: </string>
     <string name="time_label">Started On: </string>
     <string name="result_label">Results: </string>
-    <string name="Status">Compare Your Location to the Hider</string>
+    <string name="Status">↓ Compare Your Location to the Hider ↓</string>
     <string name="Challenge">Compare Locations</string>
     <string name="title_activity_find">Find</string>
     <string name="title_activity_game_status">GameStatus</string>

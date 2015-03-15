@@ -62,9 +62,9 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/onQuery"
-        android:id="@+id/button2"
-        android:onClick="onQueryClick"
+        android:text="@string/onStatusClick"
+        android:id="@+id/StatusButton"
+        android:onClick="onStatusClick"
         android:layout_above="@+id/button"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="127dp" />
